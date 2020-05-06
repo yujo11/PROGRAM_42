@@ -47,9 +47,32 @@
 - [유튜브 강좌1 - Flutter Crash Course for Beginners 2020 - Build a Flutter App with Google's Flutter & Dart](https://www.youtube.com/watch?v=x0uinJvhNxI&t)
 - [유튜브 강좌2- Flutter 입문. 안드로이드와 iOS 개발을 한 번에](https://www.youtube.com/watch?v=lRbZsBvG9Ig)
 
-#### 2020.05.03(수)
+#### 2020.04.30(목)
 
-안건 1) 요구사항 정리
+안건1) 신규 멤버 영입: seongwpa
+
+- 함께 만나서 학습 진행하는 seongwpa 님도 플러터에 관심이 있어서 함께 하기로 함
+
+안건2) 제작할 애플리케이션 정하기
+
+- 기한내에 칸반보드 제작이 어려울 것으로 판단
+- 학습 예제로 익힌 퀴즈 앱과 투두 앱 중 하나를 선정하기로 함
+
+#### 2020.05.06(수)
+
+안건1) 제작할 애플리케이션 정하기
+
+- 투두앱(Todo Appliction) 제작 확정
+- 투두앱을 통해 NavBar와 AppBar가 있는 레이아웃 적용
+- sqlite를 이용해 로컬데이터베이스 활용
+
+안건2) 애플리케이션 컨셉 확정
+
+- 엡 이름: TOODO
+- 4가지 종류의 버튼을 이용해 할일(Task)을 관리한다는 점에 착안한 이름
+- "T"는 Task를, "OODO"는 4개의 버튼을 의미함
+
+안건3) 요구사항 정리
 
 **Application Layout** **요구사항**
 
@@ -62,12 +85,12 @@
 - Navigation Bar에는 현재 보고 있는 페이지의 이름을 표시한다.
 - Item Container에는 추가, 삭제 버튼이 포함 된다.
 
-안건2) Wireframe 작성
+안건4) Wireframe 작성
 
 **Layout 버전 1.0**
 
-![](https://github.com/YUJO42/PROGRAM_42/blob/master/Layout/Layout_1.0_ver.jpg)
+![layout Ver.1.0](https://github.com/YUJO42/PROGRAM_42/blob/master/Layout/Layout_1.0_ver.jpg)
 
 **Layout 버전 1.1**
 
-![](https://github.com/YUJO42/PROGRAM_42/blob/master/Layout/Layout_1.1_ver.jpg)
+![layout Ver.1.1](https://github.com/YUJO42/PROGRAM_42/blob/master/Layout/Layout_1.1_ver.jpg)

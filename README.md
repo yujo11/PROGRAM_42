@@ -47,7 +47,7 @@
 
   - **Layout 버전 1**
 
-    ![](/home/yujo/.config/Typora/typora-user-images/image-20200506111101526.png)
+    ![](https://github.com/YUJO42/PROGRAM_42/blob/master/Layout_1.0_ver1.jpg)
 
 
 

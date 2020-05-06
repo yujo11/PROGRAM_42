@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:toodoprogrma42/screen/screen_about.dart';
+import 'package:toodoprogrma42/screen/screen_achievement.dart';
+import 'package:toodoprogrma42/screen/screen_home.dart';
 import 'package:toodoprogrma42/widget/bottom_bar.dart';
-
 
 void main() => runApp(TooDo());
 
@@ -26,21 +28,9 @@ class _TooDoState extends State<TooDo> {
           body: TabBarView(
             physics: NeverScrollableScrollPhysics(),
             children: <Widget>[
-              Container(
-                child: Center(
-                  child: Text('home'),
-                ),
-              ),
-              Container(
-                child: Center(
-                  child: Text('search'),
-                ),
-              ),
-              Container(
-                child: Center(
-                  child: Text('save'),
-                ),
-              ),
+              HomeScreen(),
+              AchievementScreen(),
+              AboutScreen(),
             ],
           ),
           bottomNavigationBar: Bottom(),

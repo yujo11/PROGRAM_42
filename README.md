@@ -4,21 +4,23 @@
 
 ---
 
-- 목적
-  - Flutter를 학습한다.
-  - AOS, IOS 두 플랫폼 모두에서 지원되는 APP를 만드는 것을 목적으로 한다.
-  - ToDo Application
-  
-- 팀원
-  - YUJO42   (https://github.com/YUJO42)
-  - paikwiki (https://github.com/paikwiki)
-  - seongwpa (https://github.com/seongwpa)
-  
-- 개발 환경
-  - 개발 도구
-    - Flutter, Firebase, NoSQL (추가 예정)
-  - 협업 도구
-    - github, slack, teamviewer
+### 목적
+
+- Flutter를 학습한다.
+- AOS, IOS 두 플랫폼 모두에서 지원되는 APP를 만드는 것을 목적으로 한다.
+- ToDo Application
+
+### 팀원
+
+| Member | GitHub |
+|-------:|--------|
+| yujo [:envelope:](yujo@student.42seoul.kr)           | [YUJO42@github](https://github.com/YUJO42) |
+| cbaek [:envelope:](cbaek@student.42seoul.kr)        | [paikwiki@github](https://github.com/paikwiki) |
+| seongwpa  [:envelope:](seongwpa@student.42seoul.kr) | [seongwpa@github](https://github.com/seongwpa)
+
+### 개발 환경
+  - 개발 도구: Flutter, Firebase, NoSQL (추가 예정)
+  - 협업 도구: github, slack, teamviewer
 
 ### 회의록
 
@@ -44,12 +46,12 @@
     - Item을 추가할 때 Item을 추가하는 Textfiled와 "추가" 버튼을 제공한다.
     - 현재 보고 있는 페이지의 Navigation Bar를 상단에 표시한다.
     - Navigation Bar에는 현재 보고 있는 페이지의 이름을 표시한다.
-    - Item Container에는 추가, 삭제 버튼이 포함 된다. 
+    - Item Container에는 추가, 삭제 버튼이 포함 된다.
 
   - **Layout 버전 1.0**
 
     ![](https://github.com/YUJO42/PROGRAM_42/blob/master/Layout/Layout_1.0_ver.jpg)
-    
+
   - **Layout 버전 1.1**
     ![](https://github.com/YUJO42/PROGRAM_42/blob/master/Layout/Layout_1.1_ver.jpg)
 

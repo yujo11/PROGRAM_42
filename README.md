@@ -10,8 +10,9 @@
   - ToDo Application
   
 - 팀원
-  - YUJO42 (https://github.com/YUJO42)
-  - paikwiki(https://github.com/paikwiki)
+  - YUJO42   (https://github.com/YUJO42)
+  - paikwiki (https://github.com/paikwiki)
+  - seongwpa (https://github.com/seongwpa)
   
 - 개발 환경
   - 개발 도구

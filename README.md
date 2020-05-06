@@ -45,9 +45,12 @@
     - Navigation Bar에는 현재 보고 있는 페이지의 이름을 표시한다.
     - Item Container에는 추가, 삭제 버튼이 포함 된다. 
 
-  - **Layout 버전 1**
+  - **Layout 버전 1.0**
 
-    ![](https://github.com/YUJO42/PROGRAM_42/blob/master/Layout_1.0_ver1.jpg)
+    ![](https://github.com/YUJO42/PROGRAM_42/blob/master/Layout/Layout_1.0_ver.jpg)
+    
+  - **Layout 버전 1.1**
+    ![](https://github.com/YUJO42/PROGRAM_42/blob/master/Layout/Layout_1.1_ver.jpg)
 
 
 

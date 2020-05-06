@@ -1,6 +1,6 @@
-# toodoprogrma42
+# toodoprogram42
 
-Task Management 
+Task Management
 
 ## Getting Started
 

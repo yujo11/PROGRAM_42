@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:toodoprogrma42/widget/todo_list.dart';
+import 'package:toodoprogram42/widget/todo_list.dart';
 
-class AchievementScreen extends StatefulWidget {
-  _AchievementScreenState createState() => _AchievementScreenState();
+class HomeScreen extends StatefulWidget {
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _AchievementScreenState extends State<AchievementScreen> {
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -19,7 +19,7 @@ class _AchievementScreenState extends State<AchievementScreen> {
         backgroundColor: Colors.black26,
         appBar: AppBar(
           title: Text(
-            'ACHIEVEMENT',
+            'HOME',
             textAlign: TextAlign.center,
           ),
         ),

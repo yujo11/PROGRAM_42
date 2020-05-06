@@ -23,6 +23,23 @@ class _AboutScreenState extends State<AboutScreen> {
             textAlign: TextAlign.center,
           ),
         ),
+        body: Column(
+          children: <Widget>[
+            FractionallySizedBox(
+              widthFactor: 1,
+              child: Text('TOODO'),
+            ),
+            FractionallySizedBox(
+              widthFactor: 1,
+              child: Text('add\n' + 'done\n' + 'undo\n' + 'remove'),
+            ),
+            FractionallySizedBox(
+              widthFactor: 1,
+              child: Text(
+                  'captain | yujo@student.42seoul.kr\ncrew 	| cbaek@student.42seoul.kr\ncrew 	| seongwpa@student.42seoul.kr'),
+            ),
+          ],
+        ),
       ),
     );
   }

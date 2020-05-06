@@ -14,9 +14,9 @@
 
 | Member | GitHub |
 |--------|--------|
-| yujo [:envelope:](yujo@student.42seoul.kr)           | [YUJO42@github](https://github.com/YUJO42) |
-| cbaek [:envelope:](cbaek@student.42seoul.kr)        | [paikwiki@github](https://github.com/paikwiki) |
-| seongwpa  [:envelope:](seongwpa@student.42seoul.kr) | [seongwpa@github](https://github.com/seongwpa)
+| yujo [:envelope:](mailto:yujo@student.42seoul.kr)           | [YUJO42@github](https://github.com/YUJO42) |
+| cbaek [:envelope:](mailto:cbaek@student.42seoul.kr)        | [paikwiki@github](https://github.com/paikwiki) |
+| seongwpa  [:envelope:](mailto:seongwpa@student.42seoul.kr) | [seongwpa@github](https://github.com/seongwpa)
 
 ### 개발 환경
 

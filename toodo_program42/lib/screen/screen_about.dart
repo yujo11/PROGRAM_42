@@ -23,22 +23,31 @@ class _AboutScreenState extends State<AboutScreen> {
             textAlign: TextAlign.center,
           ),
         ),
-        body: Column(
-          children: <Widget>[
-            FractionallySizedBox(
-              widthFactor: 1,
-              child: Text('TOODO'),
-            ),
-            FractionallySizedBox(
-              widthFactor: 1,
-              child: Text('add\n' + 'done\n' + 'undo\n' + 'remove'),
-            ),
-            FractionallySizedBox(
-              widthFactor: 1,
-              child: Text(
-                  'captain | yujo@student.42seoul.kr\ncrew 	| cbaek@student.42seoul.kr\ncrew 	| seongwpa@student.42seoul.kr'),
-            ),
-          ],
+        body: Container(
+          margin: EdgeInsets.fromLTRB(40, 50, 40, 50),
+          child: Column(
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.fromLTRB(0, 0, 0, 50),
+                child: Text(
+                  'TOODO',
+                  textAlign: TextAlign.center,
+                  textScaleFactor: 1.4,
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.fromLTRB(50, 0, 50, 50),
+                alignment: Alignment.topLeft,
+                child: Text('add\n' + 'done\n' + 'undo\n' + 'remove'),
+              ),
+              Container(
+                margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                alignment: Alignment.topLeft,
+                child: Text(
+                    'captain | yujo@student.42seoul.kr\ncrew 	| cbaek@student.42seoul.kr\ncrew 	| seongwpa@student.42seoul.kr'),
+              ),
+            ],
+          ),
         ),
       ),
     );

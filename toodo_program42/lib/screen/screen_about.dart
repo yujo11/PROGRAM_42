@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:toodoprogram42/widget/todo_list.dart';
 
-class AboutScreen extends StatefulWidget {
-  _AboutScreenState createState() => _AboutScreenState();
-}
-
-class _AboutScreenState extends State<AboutScreen> {
+// TODO: 중복제거!!
+class AboutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -29,16 +26,103 @@ class _AboutScreenState extends State<AboutScreen> {
             children: <Widget>[
               Container(
                 margin: EdgeInsets.fromLTRB(0, 0, 0, 50),
-                child: Text(
-                  'TOODO',
-                  textAlign: TextAlign.center,
-                  textScaleFactor: 1.4,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text('T',
+                        textScaleFactor: 1.4,
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold)),
+                    Text('O',
+                        textScaleFactor: 1.4,
+                        style: TextStyle(
+                            color: Colors.blue[800],
+                            fontWeight: FontWeight.bold)),
+                    Text('O',
+                        textScaleFactor: 1.4,
+                        style: TextStyle(
+                            color: Colors.red[800],
+                            fontWeight: FontWeight.bold)),
+                    Text('D',
+                        textScaleFactor: 1.4,
+                        style: TextStyle(
+                            color: Colors.green[600],
+                            fontWeight: FontWeight.bold)),
+                    Text('O',
+                        textScaleFactor: 1.4,
+                        style: TextStyle(
+                            color: Colors.yellow[400],
+                            fontWeight: FontWeight.bold)),
+                  ],
                 ),
               ),
               Container(
                 margin: EdgeInsets.fromLTRB(50, 0, 50, 50),
                 alignment: Alignment.topLeft,
-                child: Text('add\n' + 'done\n' + 'undo\n' + 'remove'),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      child: Row(
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                            child: Text('●',
+                                textScaleFactor: 1.4,
+                                style: TextStyle(
+                                    color: Colors.blue[800],
+                                    fontWeight: FontWeight.bold)),
+                          ),
+                          Text('add'),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                            child: Text('●',
+                              textScaleFactor: 1.4,
+                              style: TextStyle(
+                                  color: Colors.green[600],
+                                  fontWeight: FontWeight.bold)),
+                          ),
+                          Text('done'),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                            child: Text('●',
+                              textScaleFactor: 1.4,
+                              style: TextStyle(
+                                  color: Colors.yellow[400],
+                                  fontWeight: FontWeight.bold)),
+                          ),
+                          Text('undo'),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                            child: Text('●',
+                              textScaleFactor: 1.4,
+                              style: TextStyle(
+                                  color: Colors.red[800],
+                                  fontWeight: FontWeight.bold)),
+                          ),
+                          Text('remove'),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Container(
                 margin: EdgeInsets.fromLTRB(0, 0, 0, 0),

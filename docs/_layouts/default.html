@@ -33,8 +33,8 @@
 			<ul id="tag-list">
 				<li><a href="{{ '/' | relative_url }}" ><img src="{{ '/assets/img/disk.png' | relative_url }}" />(C:)</a>
 			<ul>
-				<li><a href="{{ '/2020/05/08/toodo.html' | relative_url }}/" title="todoo"><img src="{{ '/assets/img/folder.ico' | relative_url }}" />Toodo</a></li>
-				<li><a href="{{ '/2020/05/08/team.html' | relative_url }}/" title="todoo"><img src="{{ '/assets/img/folder.ico' | relative_url }}" />Team</a></li>
+				<li><a href="{{ '/2020/05/08/toodo' | relative_url }}" title="todoo"><img src="{{ '/assets/img/folder.ico' | relative_url }}" />Toodo</a></li>
+				<li><a href="{{ '/2020/05/08/team' | relative_url }}" title="todoo"><img src="{{ '/assets/img/folder.ico' | relative_url }}" />Team</a></li>
 				{% comment %}
 					{% assign tags = site.data.tags| sort %}
 					{% for tag in tags %}
@@ -92,7 +92,11 @@
 				<li>{{ page.date | date: '%B %-d, %Y' }}</li>
 			</ul>
 			<div class="post_content">
-        		{{ content }}
+				{% if page.title == '모니와친구들' %}
+					<h2>TOODO is almost done!</h2>
+				{% else %}
+					{{ content }}
+				{% endif %}
 			</div>
 		</div>
     {% endif %}

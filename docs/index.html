@@ -1,9 +1,0 @@
----
-layout: default
-title: 모니와친구들
----
-<ul>
-	{% for post in site.posts %}
-	<li><a href="{{ post.url | relative_url }}" title="{{ post.title }}"><img src="{{ '/assets/img/file.ico' | relative_url }}" title="{{ post.title }}" />{{ post.title }}</a></li>
-	{% endfor %}
-</ul>

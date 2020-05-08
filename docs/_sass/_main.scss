@@ -357,10 +357,14 @@ ul.topbar {
 @media only screen and (max-width: 610px) {
 	.tag_list {
 		width: 98.7%;
+		min-height: 6em;
+		height: 6em;
 	}
 	.post_list {
 		width: 98.7%;
 		float: left;
+		min-height: 6em;
+		height: 6em;
 	}
 	.post_total {
 		.left {
@@ -369,6 +373,14 @@ ul.topbar {
 	}
 }
 @media only screen and (max-width: 520px) {
+	.tag_list {
+		min-height: 5em;
+		height: 5em;
+	}
+	.post_list {
+		min-height: 5em;
+		height: 5em;
+	}
 	.post_total {
 		.left {
 			width: 34.5%;

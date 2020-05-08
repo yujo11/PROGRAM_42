@@ -26,7 +26,7 @@ class AboutScreen extends StatelessWidget {
   ];
   List<Widget> _buildLogoString() {
     final logoString = <Widget>[];
-    for(var lc in logoText) {
+    for(final lc in logoText) {
       logoString.add(Text(lc['charactor'],
             textScaleFactor: 1.4,
             style: TextStyle(color: lc['color'], fontWeight: FontWeight.bold)));

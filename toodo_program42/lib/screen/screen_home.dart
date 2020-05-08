@@ -43,14 +43,40 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               ButtonBar(
                 children: <Widget>[
-                  FlatButton(
-                    child: Text('123'),
-                    onPressed: () {},
-                  ),
-                  RaisedButton(
-                    child: Text('ENxzc'),
-                    onPressed: () {},
-                  )
+//                  FlatButton(
+//                    child: Text('REMOVE'),
+//                    onPressed: () {},
+//                  ),
+//                  RaisedButton(
+//                    child: Text(
+//                      'DONE',
+//                    ),
+//                    onPressed: () {},
+//                  ),
+                  IconButton(
+                      icon: Icon(
+                        Icons.assignment_turned_in,
+                        color: Colors.green,
+                      ),
+                      onPressed: () {}),
+                  IconButton(
+                      icon: Icon(
+                        Icons.delete,
+                        color: Colors.redAccent,
+                      ),
+                      onPressed: () {}),
+                  IconButton(
+                      icon: Icon(
+                        Icons.add,
+                        color: Colors.blue,
+                      ),
+                      onPressed: () {}),
+                  IconButton(
+                      icon: Icon(
+                        Icons.replay,
+                        color: Colors.yellowAccent,
+                      ),
+                      onPressed: () {}),
                 ],
               )
             ],

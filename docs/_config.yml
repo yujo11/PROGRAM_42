@@ -1,0 +1,15 @@
+title: TOODO
+email: yujo@student.42seoul.kr
+description: >- # this means to ignore newlines until "baseurl:"
+  TEST DESCRIPTION
+url: ""
+github_username: YUJO42
+remote_theme: h01000110/windows-95
+plugins:
+  - jekyll-feed
+
+# for windows-95 theme
+google_verification: null
+sass:
+  style: :compressed
+  sass_dir: _sass

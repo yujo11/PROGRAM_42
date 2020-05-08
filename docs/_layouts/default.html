@@ -35,7 +35,7 @@
 			<ul>
 				{% assign tags = site.data.tags| sort %}
 				{% for tag in tags %}
-				<li><a href="/tag/{{ tag[1] }}/" title="{{ tag[1] }}"><img src="{{ '/assets/img/folder.ico' | relative_url }}" />{{ tag[1] }}</a></li>
+				<li><a href="{{ tag[1][0] | prepend: '/tag/' | relative_url }}/" title="{{ tag[1] }}"><img src="{{ '/assets/img/folder.ico' | relative_url }}" />{{ tag[1] }}</a></li>
 				{% endfor %}
 			</ul>
 				</li>
@@ -46,7 +46,7 @@
 				{% if page.title == 'me' or page.title == '404...' %}
 					<ul>
 						{% for post in site.posts %}
-						<li><a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ '/assets/img/file.ico' | relative_url }}" title="{{ post.title }}" />{{ post.title }}</a></li>
+						<li><a href="{{ post.url | relative_url }}" title="{{ post.title }}"><img src="{{ '/assets/img/file.ico' | relative_url }}" title="{{ post.title }}" />{{ post.title }}</a></li>
 						{% endfor %}
 					</ul>
 				{% else %}

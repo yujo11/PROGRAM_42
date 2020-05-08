@@ -1,7 +1,8 @@
 title: TOODO
 email: yujo@student.42seoul.kr
 description: >- # this means to ignore newlines until "baseurl:"
-  TEST DESCRIPTION
+  TEST DESCRIPTION.
+baseurl: "/docs"
 url: ""
 github_username: YUJO42
 remote_theme: h01000110/windows-95

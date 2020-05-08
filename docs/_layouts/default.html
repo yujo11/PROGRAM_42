@@ -33,10 +33,14 @@
 			<ul id="tag-list">
 				<li><a href="{{ '/' | relative_url }}" ><img src="{{ '/assets/img/disk.png' | relative_url }}" />(C:)</a>
 			<ul>
-				{% assign tags = site.data.tags| sort %}
-				{% for tag in tags %}
-				<li><a href="{{ tag[1][0] | prepend: '/tag/' | relative_url }}/" title="{{ tag[1] }}"><img src="{{ '/assets/img/folder.ico' | relative_url }}" />{{ tag[1] }}</a></li>
-				{% endfor %}
+				<li><a href="{{ '/2020/05/08/toodo.html' | relative_url }}/" title="todoo"><img src="{{ '/assets/img/folder.ico' | relative_url }}" />Toodo</a></li>
+				<li><a href="{{ '/2020/05/08/team.html' | relative_url }}/" title="todoo"><img src="{{ '/assets/img/folder.ico' | relative_url }}" />Team</a></li>
+				{% comment %}
+					{% assign tags = site.data.tags| sort %}
+					{% for tag in tags %}
+					<li><a href="{{ tag[1][0] | prepend: '/tag/' | relative_url }}/" title="{{ tag[1] }}"><img src="{{ '/assets/img/folder.ico' | relative_url }}" />{{ tag[1] }}</a></li>
+					{% endfor %}
+				{% endcomment %}
 			</ul>
 				</li>
 			</ul>
@@ -80,7 +84,7 @@
 			<div class="post_title">
 				<img src="{{ '/assets/img/file.png' | relative_url }}" />
 				<h1>{{  page.title  }}</h1>
-				<a href="/"><div class="btn"><span class="fa fa-times"></span></div></a>
+				<a href="{{ '/' | relative_url }}"><div class="btn"><span class="fa fa-times"></span></div></a>
 				<div class="btn btn_max"><span class="fa fa-window-maximize"></span></div>
 				<div class="btn"><span class="fa fa-window-minimize"></span></div>
 			</div>
@@ -96,7 +100,7 @@
 	<script src="{{ '/assets/js/002.js' | relative_url }}"></script>
 	<div class="footer">
 		<p style="margin-bottom: 0.8em;">
-			&copy2020. Created by <a href="https://github.com/YUJO42" target="_blank">모니와 친구들</a>
+			&copy2020. Created by <a href="https://github.com/YUJO42" target="_blank"><code>모니와 친구들</code></a>
 		</p>
 		<p>
 			<span style="opacity: 0.6;">theme: <a href="https://h01000110.github.io/20170917/windows-95" target="_blank">windows-95</a> by <a href="https://github.com/h01000110" target="_blank">h01000110</a></span>

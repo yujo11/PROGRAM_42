@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:toodoprogram42/widget/todo_list.dart';
 
 // TODO: 중복제거!!
 class AboutScreen extends StatelessWidget {

@@ -2,6 +2,38 @@ import 'package:flutter/material.dart';
 
 // TODO: 중복제거!!
 class AboutScreen extends StatelessWidget {
+  final logoText = [
+    {
+      'charactor': 'T',
+      'color': Colors.white,
+    },
+    {
+      'charactor': 'O',
+      'color': Colors.blue[800],
+    },
+    {
+      'charactor': 'O',
+      'color': Colors.red[800],
+    },
+    {
+      'charactor': 'D',
+      'color': Colors.green[600],
+    },
+    {
+      'charactor': 'O',
+      'color': Colors.yellow[400],
+    },
+  ];
+  List<Widget> _buildLogoString() {
+    final logoString = <Widget>[];
+    for(var lc in logoText) {
+      logoString.add(Text(lc['charactor'],
+            textScaleFactor: 1.4,
+            style: TextStyle(color: lc['color'], fontWeight: FontWeight.bold)));
+    }
+    return logoString;
+  }
+
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -27,32 +59,7 @@ class AboutScreen extends StatelessWidget {
                 margin: EdgeInsets.fromLTRB(0, 0, 0, 50),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text('T',
-                        textScaleFactor: 1.4,
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold)),
-                    Text('O',
-                        textScaleFactor: 1.4,
-                        style: TextStyle(
-                            color: Colors.blue[800],
-                            fontWeight: FontWeight.bold)),
-                    Text('O',
-                        textScaleFactor: 1.4,
-                        style: TextStyle(
-                            color: Colors.red[800],
-                            fontWeight: FontWeight.bold)),
-                    Text('D',
-                        textScaleFactor: 1.4,
-                        style: TextStyle(
-                            color: Colors.green[600],
-                            fontWeight: FontWeight.bold)),
-                    Text('O',
-                        textScaleFactor: 1.4,
-                        style: TextStyle(
-                            color: Colors.yellow[400],
-                            fontWeight: FontWeight.bold)),
-                  ],
+                  children: _buildLogoString(),
                 ),
               ),
               Container(
@@ -81,10 +88,10 @@ class AboutScreen extends StatelessWidget {
                           Container(
                             margin: EdgeInsets.fromLTRB(0, 0, 10, 0),
                             child: Text('●',
-                              textScaleFactor: 1.4,
-                              style: TextStyle(
-                                  color: Colors.green[600],
-                                  fontWeight: FontWeight.bold)),
+                                textScaleFactor: 1.4,
+                                style: TextStyle(
+                                    color: Colors.green[600],
+                                    fontWeight: FontWeight.bold)),
                           ),
                           Text('done'),
                         ],
@@ -96,10 +103,10 @@ class AboutScreen extends StatelessWidget {
                           Container(
                             margin: EdgeInsets.fromLTRB(0, 0, 10, 0),
                             child: Text('●',
-                              textScaleFactor: 1.4,
-                              style: TextStyle(
-                                  color: Colors.yellow[400],
-                                  fontWeight: FontWeight.bold)),
+                                textScaleFactor: 1.4,
+                                style: TextStyle(
+                                    color: Colors.yellow[400],
+                                    fontWeight: FontWeight.bold)),
                           ),
                           Text('undo'),
                         ],
@@ -111,10 +118,10 @@ class AboutScreen extends StatelessWidget {
                           Container(
                             margin: EdgeInsets.fromLTRB(0, 0, 10, 0),
                             child: Text('●',
-                              textScaleFactor: 1.4,
-                              style: TextStyle(
-                                  color: Colors.red[800],
-                                  fontWeight: FontWeight.bold)),
+                                textScaleFactor: 1.4,
+                                style: TextStyle(
+                                    color: Colors.red[800],
+                                    fontWeight: FontWeight.bold)),
                           ),
                           Text('remove'),
                         ],

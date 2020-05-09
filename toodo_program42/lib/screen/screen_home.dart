@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("ListView Handle Items")),
+      appBar: AppBar(title: Text("HOME")),
       body: Column(
         children: <Widget>[
           Padding(
@@ -29,10 +29,11 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: const EdgeInsets.all(10),
               height: 70,
               alignment: Alignment(0, 0),
-              color: Colors.orange,
+              color: Colors.black45,
               child: Text(
-                "To remove an item, swipe the tile to the right or tap the trash icon.",
-                style: TextStyle(color: Colors.white),
+                "할 일 목록.",
+                style: TextStyle(color: Colors.white,
+                fontSize: 16),
               ),
             ),
           ),
@@ -47,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: ListTile(
                     title: Text(item),
                     trailing: IconButton(
-                      icon: Icon(Icons.delete_forever),
+                      icon: Icon(Icons.check_circle),
                       onPressed: () {
                         setState(() {
                           items.removeAt(index);
@@ -74,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: Row(
               children: <Widget>[
-                Text("Inser Data:"),
+                //Text(""),
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -91,17 +92,23 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-                RaisedButton(
-                  child: Text("Insert"),
-                  onPressed: () {
-                    setState(() {
-                      if (teController.text != "") {
-                        items.add(teController.text);
-                      }
-                    });
-                    teController.clear();
-                  },
-                )
+                IconButton(
+                  icon: Icon(
+                    Icons.add_circle,
+                    color: Colors.green,
+                  )
+                ),
+//                RaisedButton(
+//                  child: Text("add"),
+//                  onPressed: () {
+//                    setState(() {
+//                      if (teController.text != "") {
+//                        items.add(teController.text);
+//                      }
+//                    });
+//                    teController.clear();
+//                  },
+//                )
               ],
             ),
           ),

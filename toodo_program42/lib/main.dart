@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:toodoprogram42/screen/screen_about.dart';
 import 'package:toodoprogram42/screen/screen_achievement.dart';
-import 'package:toodoprogram42/screen/screen_home.dart';
+import 'package:toodoprogram42/screen/new_screen_home.dart';
 import 'package:toodoprogram42/widget/bottom_bar.dart';
 
 void main() => runApp(TooDo());

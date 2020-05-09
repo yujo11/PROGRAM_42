@@ -23,9 +23,9 @@
 		<div class="default_title">
 			<img src="{{ '/assets/img/mycomputer.png' | relative_url }}" />
 			{% if page.tag %}
-				<h1>{{ page.tag }}</h1>
+				<a href="{{ '/' | relative_url }}" style="text-decoration: none;"><h1>{{ page.tag }}</h1></a>
 			{% else %}
-				<h1>{{ site.name }}</h1>
+				<a href="{{ '/' | relative_url }}" style="text-decoration: none;"><h1>{{ site.name }}</h1></a>
 			{% endif %}
 		</div>
 		{% include topbar.html %}

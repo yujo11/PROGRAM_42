@@ -189,12 +189,13 @@ ul.topbar {
 .post_content {
 	position: relative;
 	width: 98.5%;
-	min-height: 600px;
-	max-height: 600px;
-	padding: 2px;
+	min-height: 320px;
+	// max-height: 600px;
+	padding: 1em;
 	margin: 0 auto;
 	overflow-y: scroll;
 	overflow-x: scroll;
+	box-sizing: border-box;
 
 	p {
 		line-height: 150%;
@@ -215,9 +216,12 @@ ul.topbar {
 	h2 {
 		font-size: 18px;
 		font-weight: 700;
-		margin: 25px 0 5px 0;
+		margin: 1em 0 5px 0;
 	}
 
+	h3 {
+		padding: 0.8em 0;
+	}
 	em {
 		font-style: italic;
 	}
@@ -239,16 +243,19 @@ ul.topbar {
 
 	ul {
 		list-style: square;
-		margin: 0 0 15px 30px;
+		margin: 0 0 15px 1.8em;
 
 		li {
-			padding: 5px;
-
+			padding: 5px 0;
+			p {
+				padding: 0;
+				margin: 0;
+			}
 			ul {
-				margin: 10px 0 0 15px;
+				margin: 0 0 0.4em 1em;
 
 				li {
-					padding: 5px;
+					padding: 0.12em 0;
 				}
 			}
 		}
@@ -256,16 +263,19 @@ ul.topbar {
 
 	ol {
 		list-style: decimal-leading-zero;
-		margin: 0 0 15px 30px;
+		margin: 0 0 15px 1.8em;
 
 		li {
-			padding: 5px;
-
+			padding: 5px 0;
+			p {
+				padding: 0;
+				margin: 0;
+			}
 			ul {
-				margin: 10px 0 0 15px;
+				margin: 0 0 0.4em 1em;
 
 				li {
-					padding: 5px;
+					padding: 0.12em 0;
 				}
 			}
 		}

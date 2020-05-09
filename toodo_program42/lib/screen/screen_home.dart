@@ -5,83 +5,107 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  List<String> items = List<String>.generate(7, (index) => "Item - $index");
+
+  final teController = TextEditingController(
+    text: "good",
+  );
+
+  @override
+  void dispose() {
+    teController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: Colors.black,
-        accentColor: Colors.white,
-      ),
-      title: 'ToDo List',
-      home: Scaffold(
-        backgroundColor: Colors.black26,
-        appBar: AppBar(
-          title: Text(
-            'HOME',
-            textAlign: TextAlign.center,
+    return Scaffold(
+      appBar: AppBar(title: Text("ListView Handle Items")),
+      body: Column(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              height: 70,
+              alignment: Alignment(0, 0),
+              color: Colors.orange,
+              child: Text(
+                "To remove an item, swipe the tile to the right or tap the trash icon.",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
           ),
-        ),
-        body: SafeArea(
-          child: ListView(
-            padding: EdgeInsets.symmetric(horizontal: 24.0),
-            children: <Widget>[
-              SizedBox(
-                height: 80.0,
-                width: 160.0,
-              ),
-              Column(
-                children: <Widget>[
-                  SizedBox(height: 16.0),
-                  Text('To Do List'),
-                ],
-              ),
-              TextField(
-                decoration: InputDecoration.collapsed(
-                  hintText: 'Today',
+          Expanded(
+            child: ListView.builder(
+              itemCount: items.length,
+              itemBuilder: (context, index) {
+                final item = items[index];
+                return Dismissible(
+                  key: Key(item),
+                  direction: DismissDirection.startToEnd,
+                  child: ListTile(
+                    title: Text(item),
+                    trailing: IconButton(
+                      icon: Icon(Icons.delete_forever),
+                      onPressed: () {
+                        setState(() {
+                          items.removeAt(index);
+                        });
+                      },
+                    ),
+                  ),
+                  onDismissed: (direction) {
+                    setState(() {
+                      items.removeAt(index);
+                    });
+                  },
+                );
+              },
+            ),
+          ),
+          Divider(
+            color: Colors.grey,
+            height: 5,
+            indent: 10,
+            endIndent: 10,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+            child: Row(
+              children: <Widget>[
+                Text("Inser Data:"),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: TextField(
+                      controller: teController,
+                      onSubmitted: (text) {
+                        setState(() {
+                          if (teController.text != "") {
+                            items.add(teController.text);
+                          }
+                        });
+                        teController.clear();
+                      },
+                    ),
+                  ),
                 ),
-              ),
-              ButtonBar(
-                children: <Widget>[
-//                  FlatButton(
-//                    child: Text('REMOVE'),
-//                    onPressed: () {},
-//                  ),
-//                  RaisedButton(
-//                    child: Text(
-//                      'DONE',
-//                    ),
-//                    onPressed: () {},
-//                  ),
-                  IconButton(
-                      icon: Icon(
-                        Icons.assignment_turned_in,
-                        color: Colors.green,
-                      ),
-                      onPressed: () {}),
-                  IconButton(
-                      icon: Icon(
-                        Icons.delete,
-                        color: Colors.redAccent,
-                      ),
-                      onPressed: () {}),
-                  IconButton(
-                      icon: Icon(
-                        Icons.add,
-                        color: Colors.blue,
-                      ),
-                      onPressed: () {}),
-                  IconButton(
-                      icon: Icon(
-                        Icons.replay,
-                        color: Colors.yellowAccent,
-                      ),
-                      onPressed: () {}),
-                ],
-              )
-            ],
+                RaisedButton(
+                  child: Text("Insert"),
+                  onPressed: () {
+                    setState(() {
+                      if (teController.text != "") {
+                        items.add(teController.text);
+                      }
+                    });
+                    teController.clear();
+                  },
+                )
+              ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

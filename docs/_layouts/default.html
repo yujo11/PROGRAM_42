@@ -71,11 +71,14 @@
 			{% endunless %}
 		</div>
 		<div class="post_total">
+			{% comment %}
 			{% if page.tag %}
 				<div class="left">{{ site.tags[page.tag] | size }} file(s)</div>
 			{% else %}
 				<div class="left">{{ site.posts | size }} file(s)</div>
 			{% endif %}
+			{% endcomment %}
+
 			<div class="right">&nbsp;</div>
 		</div>
 	</div>
@@ -100,7 +103,7 @@
 	<script src="{{ '/assets/js/002.js' | relative_url }}"></script>
 	<div class="footer">
 		<p style="margin-bottom: 0.8em;">
-			&copy2020. Created by <a href="https://github.com/YUJO42" target="_blank"><code>모니와 친구들</code></a>
+			&copy2020. Created by <a href="https://github.com/YUJO42" target="_blank"><code>모니와친구들</code></a>
 		</p>
 		<p>
 			<span style="opacity: 0.6;">theme: <a href="https://h01000110.github.io/20170917/windows-95" target="_blank">windows-95</a> by <a href="https://github.com/h01000110" target="_blank">h01000110</a></span>

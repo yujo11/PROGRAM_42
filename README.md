@@ -1,6 +1,6 @@
 ## TOODO - Task Management Application
 
-[TOODO official website](https://yujo42.github.io/PROGRAM_42/)
+- TOODO 공식 웹사이트: [https://yujo42.github.io/PROGRAM_42/](https://yujo42.github.io/PROGRAM_42/)
 
 ### 프로젝트 개요
 

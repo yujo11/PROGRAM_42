@@ -104,6 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         items.add(teController.text);
                       }
                     });
+                    teController.clear();
                   },
                 ),
 //                RaisedButton(

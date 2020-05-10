@@ -47,19 +47,7 @@
 		</div>
 		<div class="post_list">
 			{% unless page.date%}
-				{% if page.title == 'me' or page.title == '404...' %}
-					<ul>
-						{% for post in site.posts %}
-						<li><a href="{{ post.url | relative_url }}" title="{{ post.title }}"><img src="{{ '/assets/img/file.ico' | relative_url }}" title="{{ post.title }}" />{{ post.title }}</a></li>
-						{% endfor %}
-					</ul>
-				{% else %}
-				<ul>
-					{% for post in site.posts %}
-						<li><a href="{{ post.url | relative_url }}" title="{{ post.title }}"><img src="{{ '/assets/img/file.ico' | relative_url }}" title="{{ post.title }}" />{{ post.title }}</a></li>
-					{% endfor %}
-				</ul>
-				{% endif %}
+				<ul></ul>
 			{% else %}
 				<ul>
 					{% for post in site.posts %}
@@ -79,7 +67,6 @@
 				<div class="left">{{ site.posts | size }} file(s)</div>
 			{% endif %}
 			{% endcomment %}
-
 			<div class="right">&nbsp;</div>
 		</div>
 	</div>

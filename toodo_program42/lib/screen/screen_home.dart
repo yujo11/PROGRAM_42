@@ -48,7 +48,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: ListTile(
                     title: Text(item),
                     trailing: IconButton(
-                      icon: Icon(Icons.check_circle),
+                      icon: Icon(Icons.check_circle,
+                      color: Colors.green,),
                       onPressed: () {
                         setState(() {
                           items.removeAt(index);
@@ -66,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           Divider(
-            color: Colors.grey,
+            color: Colors.red,
             height: 5,
             indent: 10,
             endIndent: 10,
@@ -95,8 +96,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 IconButton(
                   icon: Icon(
                     Icons.add_circle,
-                    color: Colors.green,
-                  )
+                    color: Colors.blue,
+                  ),
+                  onPressed: () {
+                    setState(() {
+                      if (teController.text != "") {
+                        items.add(teController.text);
+                      }
+                    });
+                  },
                 ),
 //                RaisedButton(
 //                  child: Text("add"),
